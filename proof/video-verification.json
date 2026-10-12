@@ -1,0 +1,106 @@
+{
+  "file": "submission/Patchline-Lab-5-minute-final.webm",
+  "durationSeconds": 299.96,
+  "width": 1280,
+  "height": 720,
+  "muted": true,
+  "paused": true,
+  "frames": [
+    {
+      "second": 15,
+      "chapter": 1,
+      "expected": "Problem hero and workflow",
+      "file": "proof/video-chapter-1-15s.png"
+    },
+    {
+      "second": 58,
+      "chapter": 2,
+      "expected": "Recorded environmental source sample and full-record quality findings",
+      "file": "proof/video-chapter-2-58s.png"
+    },
+    {
+      "second": 103,
+      "chapter": 3,
+      "expected": "Actual paired comparison readings with uncertainty and exceeding rows",
+      "file": "proof/video-chapter-3-103s.png"
+    },
+    {
+      "second": 151,
+      "chapter": 4,
+      "expected": "Workspace handoff and restored comparison",
+      "file": "proof/video-chapter-4-151s.png"
+    },
+    {
+      "second": 185,
+      "chapter": 5,
+      "expected": "Pure engines and browser-only architecture",
+      "file": "proof/video-chapter-5-185s.png"
+    },
+    {
+      "second": 225,
+      "chapter": 6,
+      "expected": "Executed engineering proof with explicit data and test scope",
+      "file": "proof/video-chapter-6-225s.png"
+    },
+    {
+      "second": 243,
+      "chapter": 6,
+      "expected": "75 detected / 25 missed generated faults; zero false holds",
+      "file": "proof/video-chapter-6-243s.png"
+    },
+    {
+      "second": 268,
+      "chapter": 7,
+      "expected": "Seller revenue, monthly cost and first-month loss",
+      "file": "proof/video-chapter-7-268s.png"
+    },
+    {
+      "second": 280,
+      "chapter": 7,
+      "expected": "Hypothetical buyer value $40, monthly shortfall \u2212$59 and first-month shortfall \u2212$359",
+      "file": "proof/video-chapter-7-280s.png"
+    },
+    {
+      "second": 298,
+      "chapter": 7,
+      "expected": "Unvalidated assumptions and visible builder credit",
+      "file": "proof/video-chapter-7-298s.png"
+    }
+  ],
+  "visualReview": {
+    "status": "Complete",
+    "method": "Visual inspection of ten chapter verification frames in a contact sheet, with detailed finance frames inspected at full resolution",
+    "chapterScenesVerified": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "scope": "Real recorded application states; this does not validate customer savings or clinical performance."
+  },
+  "formats": [
+    {
+      "file": "submission/Patchline-Lab-5-minute-final.webm",
+      "bytes": 9423017,
+      "sha256": "84307b1a38696963696f0911d322f4aedb37ea93a9f34a4fed3dd6499c14cb84",
+      "audioStreams": 0,
+      "durationSeconds": 299.96,
+      "width": 1280,
+      "height": 720,
+      "fps": 25
+    },
+    {
+      "file": "submission/Patchline-Lab-5-minute-final.mp4",
+      "bytes": 7502424,
+      "sha256": "ecb565303650876e1d473bc42c9cb40deafb844d55b3c88c84885121e06921f2",
+      "audioStreams": 0,
+      "durationSeconds": 299.96,
+      "width": 1280,
+      "height": 720,
+      "fps": 25
+    }
+  ]
+}

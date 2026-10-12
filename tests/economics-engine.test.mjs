@@ -227,3 +227,10 @@ test("economics export recomputes actual selected assumptions and preserves loss
   assertFiniteTree(report);
   assert.doesNotMatch(serialized, /paying customers|validated demand|guaranteed|infinite/i);
 });
+
+test("founder calculator keeps exact sixty-run customer break-even instead of adding a floating-point extra run", () => {
+  const result=calculateEconomics({price:100,runsPerMonth:60,minutesSaved:10,researchHourlyRate:10});
+  assert.equal(result.customerMonthlyTimeValue,100);
+  assert.equal(result.runsBreakEvenForCustomer,60);
+  assert.ok(calculateEconomics({price:100,runsPerMonth:59,minutesSaved:10,researchHourlyRate:10}).customerMonthlyTimeValue<100);
+});

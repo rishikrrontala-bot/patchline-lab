@@ -38,9 +38,7 @@ HTML, CSS and JavaScript modules deliver the interface. Pure engines separate qu
 
 Processing stays in the current browser tab with no required key, processing backend or runtime LLM call. **GLM 5.2 through Featherless was a coding assistant**; generated code received review corrections and independent checks. The older synthetic classifier is restricted to internally generated examples and does not score imported or restored user data.
 
-**Confirmed:** **111 automated tests pass** and **37 primary browser workflow groups pass**: 16 established + 21 expanded + 14 buyer worksheet research + 14 buyer worksheet checks. Five additional status/provenance regressions pass and are reported separately rather than added to the primary-group count. Browser checks exercise the complete import-to-export workflow, invalid/atomic restore, applied-settings snapshots, exact sample links, optional channels, pagination, finance errors/losses, printing and 320-pixel layout. They observed no JavaScript errors, CSP violations or runtime external requests.
-
-On the development Mac, twenty Chrome engine trials after three warmups over 5,000 recorded rows measured **p50 9.0 ms / p95 10.6 ms** for parsing, mapping, immutable trace creation, quality checks and the analysis snapshot. This excludes DOM/chart rendering, file selection, network and user task time; it is evidence for the current file bound, not a researcher-savings claim. [Executed verification and methods](VERIFICATION.md).
+**Confirmed:** **112 automated tests pass** and **51 primary browser workflow groups pass**: 16 established, 21 expanded research, and 14 buyer worksheet checks. Five targeted status/provenance regressions pass separately. All primary groups also pass against the anonymous production site. Checks cover import/export, atomic restore, applied settings, exact sample links, optional channels, pagination, finance errors/losses, printing and 320-pixel layout, with no JavaScript errors, CSP violations or runtime external requests.
 
 Two distinct software evaluations remain visible:
 

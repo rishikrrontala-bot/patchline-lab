@@ -162,11 +162,11 @@ export function calculateEconomics(input = ECONOMICS_DEFAULTS) {
   if (pilotPrice > 0) {
     pilotMarginRate = pilotMargin / pilotPrice;
   }
-  const customerMonthlyTimeValue = runsPerMonth * minutesSaved / 60 * researchHourlyRate;
+  const customerMonthlyTimeValue = runsPerMonth * minutesSaved * researchHourlyRate / 60;
   let runsBreakEvenForCustomer = null;
-  const savingsPerRun = minutesSaved / 60 * researchHourlyRate;
+  const savingsPerRun = minutesSaved * researchHourlyRate / 60;
   if (savingsPerRun > 0) {
-    runsBreakEvenForCustomer = Math.ceil(price / savingsPerRun);
+    runsBreakEvenForCustomer = Math.ceil(price * 60 / (minutesSaved * researchHourlyRate));
   }
 
   const result = {

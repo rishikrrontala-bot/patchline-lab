@@ -1,6 +1,6 @@
 # Patchline Lab — v2 five-minute voiceover
 
-**Builder:** Rishik Rontala, solo. **Spoken text:** 634 words, approximately five minutes at 127 words/minute with short pauses. Rehearse against the recorded timeline; headings and on-screen instructions are not narration. Voiceover recording and Public/Unlisted upload remain to be completed.
+**Builder:** Rishik Rontala, solo. **Spoken text:** 669 words, approximately five minutes at 134 words/minute with short pauses. Rehearse against the recorded timeline; headings and on-screen instructions are not narration. Voiceover recording and Public/Unlisted upload remain to be completed.
 
 ## 0:00–0:30 · Problem and researcher
 
@@ -20,7 +20,7 @@ The mapping selects temperature alone, so absent channels stay excluded. Blank s
 
 **On screen:** Load the labelled synthetic investigation, inject drift, choose original as control, compare and navigate one exact discrepancy.
 
-Next, I'll switch to a labelled synthetic investigation. The trace already changes, showing why a trend alone cannot establish drift. I inject gradual drift into a copy, preserving the original. Then I choose the original as the control. This is generated software evidence, not a calibrated laboratory reference.
+Next, the guided synthetic investigation starts with a changing baseline. It adds gradual drift to a copy and compares it with the unchanged original. A trend alone cannot establish drift. This is generated software evidence, not a calibrated laboratory reference.
 
 The comparison uses actual paired readings. I declare alignment, tolerance and uncertainty, then run it. Results distinguish within-tolerance, uncertain, exceeding and unavailable pairs. Insufficient coverage remains inconclusive.
 
@@ -36,7 +36,7 @@ Now the experiment can survive a handoff. I export its reusable protocol and map
 
 **On screen:** Show the three pure engines, test results and the local processing boundary.
 
-The architecture separates pure JavaScript engines from the interface. One handles quality checks and faults; another handles mapping, comparison and restoration. The economics module calculates explicit assumptions. One hundred eleven automated checks pass.
+The architecture separates pure JavaScript engines from the interface. One handles quality checks and faults; another handles mapping, comparison and restoration. The economics module calculates explicit assumptions. Over one hundred automated checks pass.
 
 CSV parsing is bounded to one megabyte and five thousand rows, with supported units and optional channels. Plot reduction changes display, not evidence. Processing stays in this browser tab, without runtime LLM calls, network APIs or required keys. I used GLM five point two through Featherless for code, and DeepSeek for finance review, then independently tested the implementation.
 
@@ -52,12 +52,11 @@ A separate independent software suite passes one hundred twenty of one hundred t
 
 **On screen:** Show six-hour $300 pilot, $99 maintained workflow, calculator base/first-month result, customer value shortfall and blank buyer evidence.
 
-The buyer hypothesis is a lab manager or principal investigator. This separate worksheet starts blank and compares the same correct reporting task. Negative savings stay negative; entered measurements remain unverified. I propose a three-hundred-dollar, two-week pilot, capped at six hours for one supported format and protocol, then test ninety-nine dollars monthly for maintained workflows.
+The buyer hypothesis is a lab manager or principal investigator. I propose a three-hundred-dollar, two-week pilot, capped at six hours for one supported format and protocol, then test ninety-nine dollars monthly for maintained workflows.
 
-Founder labor is costed at thirty dollars an hour. Five hypothetical labs yield four hundred ninety-five dollars revenue and one hundred seventy-two dollars sixty-five cents monthly surplus after the modeled costs. Acquiring all five makes the first month lose five hundred thirty-nine dollars eighty-five cents.
+With five labs, the base case produces four hundred ninety-five dollars of revenue and one hundred seventy-two dollars sixty-five cents of ongoing surplus after stated costs. Acquiring all five in month one creates a five hundred thirty-nine dollar eighty-five cent loss. Founder labor, support, fees and replacement acquisition are included.
 
-The buyer's assumptions imply only forty dollars monthly labor value against ninety-nine dollars. No savings, interviews or commitments are claimed. We need a permissioned task comparison and an actual budget owner to validate value and price.
-
+Now this separate buyer worksheet compares the same correct reporting task and starts blank. This hypothetical example values saved time at forty dollars monthly against a ninety-nine-dollar price. Negative values remain negative; entered measurements remain unverified. I would keep the free workbench here. Actual task results and budget-owner feedback will determine paid fit.
 ## Exact calculator values to keep on screen
 
 These are planning assumptions, not observed customers or profit. The base model uses five labs, $99/month, one support hour per lab at $30/hour, $120 shared costs, a $60 acquisition component, three onboarding hours, 5% monthly churn and a 3% fee.
@@ -79,7 +78,7 @@ Pilot contribution excludes acquisition and other omitted costs. Do not add it t
 
 - Keep UCI/environmental credit, synthetic labels and original/control distinctions visible. The 76 gaps belong to the selected demonstration protocol; do not call them established sensor faults.
 - Keep the 75/100 generated-fault benchmark separate from the 120/120 independent comparison cases. Neither supplies patient outcomes, calibration or imported-data accuracy.
-- Show readable architecture source and actual test output. Confirmed: 111 automated tests and 51 browser workflow groups (16 established + 21 expanded + 14 buyer worksheet), plus five targeted status regressions reported separately.
+- Show readable architecture source and actual test output. Confirmed: 112 automated tests and 51 browser workflow groups (16 established + 21 expanded + 14 buyer worksheet), plus five targeted status regressions reported separately.
 - Keep private files, keys and build logs off-screen. Automated recording stays muted.
 - Add the verified live/repository URLs and Public/Unlisted narrated video to the Devpost draft. Verified live site: https://patchline-lab.vercel.app; source: https://github.com/rishikrrontala-bot/patchline-lab.
 - Protect submission by **October 15, 2026, 3:00 p.m. EDT**; official deadline is **5:00 p.m. EDT**. Allow upload and processing time.

@@ -8,7 +8,7 @@
   "browserErrors": 0,
   "cspViolations": 0,
   "primaryBrowserGroupsPassed": 51,
-  "domainTestsPassed": 111,
+  "domainTestsPassed": 112,
   "independentComparisonCasesPassed": 120,
   "CI": {
     "status": "success",

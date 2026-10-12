@@ -1,0 +1,282 @@
+{
+  "schema": "patchline-demo-edit-v1",
+  "input": "submission/Patchline-Lab-5-minute-silent.webm",
+  "inputSHA256": "3d2ea6a0b05da307d2572f74175d582d92f446dadf62ecf1d5cba10b8ce6db02",
+  "output": "submission/Patchline-Lab-5-minute-final.webm",
+  "outputSHA256": "84307b1a38696963696f0911d322f4aedb37ea93a9f34a4fed3dd6499c14cb84",
+  "durationSeconds": 299.96,
+  "fps": 25,
+  "frames": 7499,
+  "width": 1280,
+  "height": 720,
+  "audio": "none",
+  "editing": "Real recorded app actions. Long recorder holds removed; retained actions paced to narration chapters. Source readings and app results are unchanged.",
+  "chapters": [
+    {
+      "chapter": 1,
+      "output": [
+        0,
+        30
+      ]
+    },
+    {
+      "chapter": 2,
+      "output": [
+        30,
+        75
+      ]
+    },
+    {
+      "chapter": 3,
+      "output": [
+        75,
+        140
+      ]
+    },
+    {
+      "chapter": 4,
+      "output": [
+        140,
+        175
+      ]
+    },
+    {
+      "chapter": 5,
+      "output": [
+        175,
+        215
+      ]
+    },
+    {
+      "chapter": 6,
+      "output": [
+        215,
+        250
+      ]
+    },
+    {
+      "chapter": 7,
+      "output": [
+        250,
+        299.96
+      ]
+    }
+  ],
+  "segments": [
+    {
+      "chapter": 1,
+      "label": "Problem and workflow",
+      "source": [
+        0,
+        30
+      ],
+      "seconds": 30,
+      "output": [
+        0,
+        30
+      ]
+    },
+    {
+      "chapter": 2,
+      "label": "Recorded import and selected channel",
+      "source": [
+        30,
+        76
+      ],
+      "seconds": 15,
+      "output": [
+        30,
+        45
+      ]
+    },
+    {
+      "chapter": 2,
+      "label": "Full-record sampling gaps and exact source row",
+      "source": [
+        524,
+        542
+      ],
+      "seconds": 30,
+      "output": [
+        45,
+        75
+      ]
+    },
+    {
+      "chapter": 3,
+      "label": "Labelled synthetic comparison and discrepancy plot",
+      "source": [
+        542,
+        553
+      ],
+      "seconds": 20,
+      "output": [
+        75,
+        95
+      ]
+    },
+    {
+      "chapter": 3,
+      "label": "Actual pairs and exact source sample",
+      "source": [
+        553,
+        565
+      ],
+      "seconds": 25,
+      "output": [
+        95,
+        120
+      ]
+    },
+    {
+      "chapter": 3,
+      "label": "Original versus derived readings and evidence export",
+      "source": [
+        565,
+        575
+      ],
+      "seconds": 20,
+      "output": [
+        120,
+        140
+      ]
+    },
+    {
+      "chapter": 4,
+      "label": "Workspace export, restore and recomputation",
+      "source": [
+        575,
+        588
+      ],
+      "seconds": 20,
+      "output": [
+        140,
+        160
+      ]
+    },
+    {
+      "chapter": 4,
+      "label": "Unverified restored provenance and reusable protocol",
+      "source": [
+        588,
+        594
+      ],
+      "seconds": 15,
+      "output": [
+        160,
+        175
+      ]
+    },
+    {
+      "chapter": 5,
+      "label": "Pure engines and local architecture",
+      "source": [
+        594,
+        603
+      ],
+      "seconds": 16,
+      "output": [
+        175,
+        191
+      ]
+    },
+    {
+      "chapter": 5,
+      "label": "Actual comparison source and uncertainty boundary",
+      "source": [
+        603,
+        617
+      ],
+      "seconds": 24,
+      "output": [
+        191,
+        215
+      ]
+    },
+    {
+      "chapter": 6,
+      "label": "Executed engineering proof and scope",
+      "source": [
+        617,
+        632
+      ],
+      "seconds": 17,
+      "output": [
+        215,
+        232
+      ]
+    },
+    {
+      "chapter": 6,
+      "label": "Inherited generated-fault benchmark and explicit misses",
+      "source": [
+        632,
+        647
+      ],
+      "seconds": 18,
+      "output": [
+        232,
+        250
+      ]
+    },
+    {
+      "chapter": 7,
+      "label": "Bounded pilot offer",
+      "source": [
+        1016.5,
+        1021.5
+      ],
+      "seconds": 12,
+      "output": [
+        250,
+        262
+      ]
+    },
+    {
+      "chapter": 7,
+      "label": "Transparent seller economics",
+      "source": [
+        1021.5,
+        1024.5
+      ],
+      "seconds": 12,
+      "output": [
+        262,
+        274
+      ]
+    },
+    {
+      "chapter": 7,
+      "label": "Hypothetical buyer value shortfall",
+      "source": [
+        1024.5,
+        1040
+      ],
+      "seconds": 14,
+      "output": [
+        274,
+        288
+      ]
+    },
+    {
+      "chapter": 7,
+      "label": "Unvalidated demand and builder credit",
+      "source": [
+        1135,
+        1152.24
+      ],
+      "seconds": 11.96,
+      "output": [
+        288,
+        299.96
+      ]
+    }
+  ],
+  "alternativeMP4": {
+    "file": "submission/Patchline-Lab-5-minute-final.mp4",
+    "bytes": 7502424,
+    "sha256": "ecb565303650876e1d473bc42c9cb40deafb844d55b3c88c84885121e06921f2",
+    "codec": "H.264",
+    "audio": "none"
+  }
+}

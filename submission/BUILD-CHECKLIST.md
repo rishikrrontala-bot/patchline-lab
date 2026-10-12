@@ -21,8 +21,8 @@
 
 | Check | Executed result | Scope |
 |---|---:|---|
-| Automated domain/validation tests | **111 / 111 pass** | 40 existing +50 research/economics +21 buyer-value cases |
-| Primary browser workflow groups | **51 pass** | 16 established + 21 expanded + 14 buyer worksheet research + 14 buyer worksheet checks |
+| Automated domain/validation tests | **112 / 112 pass** | 40 existing +51 research/economics +21 buyer-value cases |
+| Primary browser workflow groups | **51 pass** | 16 established + 21 expanded research + 14 buyer worksheet checks |
 | Targeted status regressions | **5 pass, separately reported** | Stale provenance/success status and mobile checks; not added to the primary-group count |
 | Independent analytic comparison cases | **120 / 120 pass** | Fixed software expectations; not sensor-fault or clinical accuracy |
 | Recorded-data pipeline | **5,000 unchanged source values processed** | 76 timing gaps; labelled perturbation and original-control comparison verified |
@@ -34,14 +34,14 @@ Chrome engine timing over the 5,000-row recording: **p50 9.0 ms / p95 10.6 ms**,
 
 - [x] Rehearse and record the v2 five-minute silent demonstration with recorded-data, controlled-comparison, handoff, architecture, benchmark and economics evidence.
 - [x] Supply a voiceover script matched to that timeline.
-- [ ] Complete final video metadata/frame inspection after the latest release.
+- [x] Complete final video metadata/frame inspection after the latest release.
 - [x] Verify the final public archive against its explicit whitelist, confirm original source hashes and exclude credentials/private generation material.
 - [x] Publish the separate edition and verify anonymous access, deployed workflow and security headers. Insert only the confirmed live URL in the Devpost draft.
 - [ ] Add Rishik's voiceover, upload **Public or Unlisted**, and verify the link without creator-only access.
 - [ ] Insert verified release/source/demo links and reconcile the final draft with shipped behavior and actual test results.
 - [ ] Submit by **October 15, 2026, 3:00 p.m. EDT**; official deadline is **5:00 p.m. EDT**. Confirm the submission landed.
 
-Recorded artifact: `Patchline-Lab-5-minute-silent.webm`. Source archive: `Patchline-Lab-Next-Founders.zip`. These artifacts do not establish that narration, publication or submission has happened.
+Recorded artifact: `Patchline-Lab-5-minute-final.mp4 / .webm`. Source archive: `Patchline-Lab-Next-Founders.zip`. These artifacts do not establish that narration, publication or submission has happened.
 
 ## What would strengthen the first three categories further
 
@@ -52,4 +52,4 @@ The [validation kit](CUSTOMER-VALIDATION-KIT.md) supplies the worksheets. Prepar
 
 No judge score is guaranteed. “95+” is an aspiration across technical execution, innovation/UX and business/finance; acceptance tests verify delivered behavior, while originality, user value and financial sustainability still depend on evidence the tests cannot manufacture.
 
-Verified release: [live app](https://patchline-lab.vercel.app), [public source](https://github.com/rishikrrontala-bot/patchline-lab). Anonymous production access and all 51 primary browser groups pass; security headers and excluded private routes are verified. GitHub CI passes the 111 tests and120 analytic cases.
+Verified release: [live app](https://patchline-lab.vercel.app), [public source](https://github.com/rishikrrontala-bot/patchline-lab). Anonymous production access and all 51 primary browser groups pass; security headers and excluded private routes are verified. GitHub CI passes the 112 tests and 120 analytic cases.
