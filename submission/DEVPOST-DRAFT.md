@@ -2,7 +2,7 @@
 
 **Builder:** Rishik Rontala, solo. **Event:** Next Founders Hackathon.
 
-**Release fields:** live project URL **[PENDING — insert verified URL]**; source archive/repository **[PENDING — insert verified public source URL]**; five-minute narrated Public/Unlisted demo **[PENDING — insert verified URL]**. The v2 silent recording and matched narration script are prepared. Publication, voiceover and submission are not claimed until their final links are verified.
+**Release fields:** live project [patchline-lab.vercel.app](https://patchline-lab.vercel.app); public source [rishikrrontala-bot/patchline-lab](https://github.com/rishikrrontala-bot/patchline-lab); five-minute narrated Public/Unlisted demo **[PENDING — insert verified URL]**. The v2 silent recording and matched narration script are prepared. The separate live site and public source are verified. Narrated upload and Devpost submission remain pending.
 
 ## Project name and tagline
 
@@ -40,7 +40,7 @@ Processing stays in the current browser tab with no required key, processing bac
 
 **Confirmed:** **111 automated tests pass** and **37 primary browser workflow groups pass**: 16 established + 21 expanded + 14 buyer worksheet research + 14 buyer worksheet checks. Five additional status/provenance regressions pass and are reported separately rather than added to the primary-group count. Browser checks exercise the complete import-to-export workflow, invalid/atomic restore, applied-settings snapshots, exact sample links, optional channels, pagination, finance errors/losses, printing and 320-pixel layout. They observed no JavaScript errors, CSP violations or runtime external requests.
 
-On the development Mac, twenty Chrome engine trials after three warmups over 5,000 recorded rows measured **p50 9.1 ms / p95 11.9 ms** for parsing, mapping, immutable trace creation, quality checks and the analysis snapshot. This excludes DOM/chart rendering, file selection, network and user task time; it is evidence for the current file bound, not a researcher-savings claim. [Executed verification and methods](VERIFICATION.md).
+On the development Mac, twenty Chrome engine trials after three warmups over 5,000 recorded rows measured **p50 9.0 ms / p95 10.6 ms** for parsing, mapping, immutable trace creation, quality checks and the analysis snapshot. This excludes DOM/chart rendering, file selection, network and user task time; it is evidence for the current file bound, not a researcher-savings claim. [Executed verification and methods](VERIFICATION.md).
 
 Two distinct software evaluations remain visible:
 

@@ -41,3 +41,7 @@ Base illustrative finance: revenue $495, monthly costs $322.35, ongoing surplus 
 Narrated Public/Unlisted video upload and actual buyer evidence remain submission requirements. The recorded silent demo and matched voiceover script are supplied. No users, interviews, customers, commitments or judge scores are fabricated.
 
 Buyer-value acceptance includes negative savings, zero usage, full setup costs, self-reported measurement scope, a 330-month payoff example, export immutability, strict own data properties, subnormal finite ratios and exact 60-run break-even without a floating-point extra run. The browser sheet has blank task inputs, deliberate same-task confirmation, measured notes and stale-export prevention.
+
+## Published separate release
+
+[Live app](https://patchline-lab.vercel.app) and [public source](https://github.com/rishikrrontala-bot/patchline-lab) are verified without creator authentication. All51 primary browser groups pass against production; CI passes 111 tests and the 120 analytic cases. Deployment headers enforce connect-src none and nosniff, and private key/generation/configuration routes return 404. Details are recorded in [deployment verification](../proof/deployment-verification.json).

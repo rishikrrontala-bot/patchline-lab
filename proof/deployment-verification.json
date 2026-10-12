@@ -1,0 +1,40 @@
+{
+  "checkedAt": "2026-10-12T01:49:11.427368+00:00",
+  "liveURL": "https://patchline-lab.vercel.app",
+  "sourceURL": "https://github.com/rishikrrontala-bot/patchline-lab",
+  "anonymousAccess": true,
+  "httpStatus": 200,
+  "runtimeExternalRequests": 0,
+  "browserErrors": 0,
+  "cspViolations": 0,
+  "primaryBrowserGroupsPassed": 51,
+  "domainTestsPassed": 111,
+  "independentComparisonCasesPassed": 120,
+  "CI": {
+    "status": "success",
+    "url": "https://github.com/rishikrrontala-bot/patchline-lab/actions/runs/38192905789"
+  },
+  "privateRoutes": [
+    {
+      "path": "/.env.local",
+      "status": 404
+    },
+    {
+      "path": "/.generation/usage.json",
+      "status": 404
+    },
+    {
+      "path": "/.vercel/project.json",
+      "status": 404
+    },
+    {
+      "path": "/tools/featherless-build.py",
+      "status": 404
+    }
+  ],
+  "headers": {
+    "Content-Security-Policy": "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'none'; object-src 'none'; base-uri 'self'; frame-ancestors 'none'",
+    "X-Content-Type-Options": "nosniff"
+  },
+  "scope": "Anonymous production verification of the separate static edition; original Patchline unchanged. No narrated upload or Devpost submission is claimed."
+}

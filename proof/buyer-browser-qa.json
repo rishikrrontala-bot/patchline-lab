@@ -1,5 +1,5 @@
 {
-  "base": "http://127.0.0.1:8789",
+  "base": "https://patchline-lab.vercel.app",
   "scope": "Muted Chrome browser acceptance for the buyer worksheet; figures are hypothetical software expectations, not observed customer savings.",
   "checks": [
     "Initial task, usage, labor and setup inputs are blank; proposed prices are explicit and no savings result or export is prefilled",

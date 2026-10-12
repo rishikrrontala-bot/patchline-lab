@@ -2,6 +2,8 @@
 
 A local measurement workbench for wearable-sensor research: map a recording, inspect exact evidence, compare a reference or repeat experiment, and reproduce the investigation from an exported workspace.
 
+Live: [patchline-lab.vercel.app](https://patchline-lab.vercel.app) · [Public source](https://github.com/rishikrrontala-bot/patchline-lab)
+
 Built by **Rishik Rontala**, solo. This separate edition preserves the original Patchline and its other hackathon entries.
 
 ## Run and verify

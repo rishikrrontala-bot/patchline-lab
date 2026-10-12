@@ -81,7 +81,7 @@ Pilot contribution excludes acquisition and other omitted costs. Do not add it t
 - Keep the 75/100 generated-fault benchmark separate from the 120/120 independent comparison cases. Neither supplies patient outcomes, calibration or imported-data accuracy.
 - Show readable architecture source and actual test output. Confirmed: 111 automated tests and 51 browser workflow groups (16 established + 21 expanded + 14 buyer worksheet), plus five targeted status regressions reported separately.
 - Keep private files, keys and build logs off-screen. Automated recording stays muted.
-- Add the verified live/repository URLs and Public/Unlisted narrated video to the Devpost draft. No live URL is recorded yet.
+- Add the verified live/repository URLs and Public/Unlisted narrated video to the Devpost draft. Verified live site: https://patchline-lab.vercel.app; source: https://github.com/rishikrrontala-bot/patchline-lab.
 - Protect submission by **October 15, 2026, 3:00 p.m. EDT**; official deadline is **5:00 p.m. EDT**. Allow upload and processing time.
 
 Source: [UCI Room Occupancy Estimation dataset](https://archive.ics.uci.edu/dataset/864/room%2Boccupancy%2Bestimation), Adarsh Pal Singh and Sachin Chaudhari, CC BY 4.0. The dataset is environmental interoperability evidence only.
