@@ -1,0 +1,27 @@
+{
+  "checks": [
+    "Imports stage a visible mapping and declared units without replacing current evidence",
+    "Invalid duplicate mapping preserves evidence; Fahrenheit and milliseconds convert; absent channels are not dropouts",
+    "Original control comparison has complete, one-to-one, zero-difference evidence",
+    "Controlled perturbation resets stale comparison and exact paired evidence navigates to the real sample",
+    "Exports retain applied comparison settings and exact original/derived values despite unapplied edits",
+    "Large reference uncertainty yields visible inconclusive evidence rather than a confident pass",
+    "Nonoverlapping timestamps retain unavailable pairs and no invented interpolated evidence",
+    "Workspace restores originals, derived data, operations and comparison then recomputes evidence with classifier disabled",
+    "Malformed workspace cannot replace the current recording",
+    "Versioned protocols and import profiles export/restore exact declared assumptions",
+    "Untrusted filenames render as plain text in staged and confirmed imports",
+    "Optional-channel workspace saves before first comparison and restores without partial-state errors",
+    "Dependent comparison validation fails atomically without replacing original, derived or protocol state",
+    "One-click investigation produces reproducible, explicitly synthetic discrepancy evidence",
+    "Review/all filters page twelve pairs, preserve exact sample navigation and export every pair",
+    "Credited independent UCI recording loads 5,000 unchanged samples with matching sampling protocol and no classifier",
+    "Recorded-data quality findings page twelve at a time while JSON retains all findings",
+    "Actual recorded-data engine timings measured in Chrome with explicit scope and complete analysis",
+    "Business scenarios expose delivery losses, acquisition/support costs and invalid input instead of fabricated ROI",
+    "Complete expanded workflow has no page-level horizontal overflow at 320 pixels",
+    "No browser errors, CSP violations or runtime external requests across the full workflow"
+  ],
+  "errors": [],
+  "external": []
+}

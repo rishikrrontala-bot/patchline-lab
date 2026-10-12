@@ -1,0 +1,38 @@
+{
+  "scope": "Local headless Chrome engine timing on this Mac. Twenty runs after three warm-up runs; includes CSV scanning, mapping/conversion, immutable trace creation, full-record QC and report snapshot construction. Excludes network, file-picker interaction, DOM/chart rendering, screenshots and user task completion. Not a production service latency or usability claim.",
+  "rows": 5000,
+  "channels": [
+    "temperature"
+  ],
+  "findings": 76,
+  "classifierDisabled": true,
+  "csvUTF8Bytes": 160655,
+  "timingsMs": [
+    9,
+    9,
+    9.099999994039536,
+    12,
+    9.800000011920929,
+    11.899999976158142,
+    9.100000023841858,
+    10.899999976158142,
+    9.400000005960464,
+    9.700000017881393,
+    8.5,
+    9.899999976158142,
+    8.800000011920929,
+    9.099999994039536,
+    8.400000005960464,
+    8.5,
+    8.599999994039536,
+    9.599999994039536,
+    8.300000011920929,
+    8.300000011920929
+  ],
+  "p50Ms": 9.099999994039536,
+  "p95Ms": 11.899999976158142,
+  "minimumMs": 8.300000011920929,
+  "maximumMs": 12,
+  "quantileMethod": "Nearest rank",
+  "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36"
+}

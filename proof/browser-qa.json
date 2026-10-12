@@ -1,0 +1,22 @@
+{
+  "checked": [
+    "Initial generated trace and four channel plots",
+    "128-row import; future missing sample remains flagged at cursor zero; classifier disabled",
+    "Failed import preserves prior experiment",
+    "Exact evidence navigation and full JSON snapshot ignores unapplied controls",
+    "Standalone executed benchmark with misses preserved in export",
+    "Invalid rerun clears stale benchmark; explicit zero seeds preserved",
+    "Planning calculator: default totals, zero-client loss and nonpositive margin",
+    "Printable report renders matching imported provenance and evidence",
+    "Reset restores exact original recording",
+    "5,000-row import and complete export with finite plotted coordinates",
+    "Chart reduction preserves missing readings between retained visual points",
+    "Untrusted filename rendered as plain text",
+    "Scenario selection invalidates an older pending file read",
+    "Oversized newer file invalidates prior pending read without replacing current experiment",
+    "320px mobile has no page-level horizontal overflow",
+    "No runtime external requests, browser errors or CSP violations"
+  ],
+  "errors": [],
+  "external": []
+}

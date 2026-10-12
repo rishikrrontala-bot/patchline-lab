@@ -1,0 +1,17 @@
+{
+  "edition": "Patchline Lab \u2014 Next Founders",
+  "builder": "Rishik Rontala",
+  "checkedAt": "2026-10-12T01:40:46.809703+00:00",
+  "domainTests": {
+    "passed": 111,
+    "failed": 0
+  },
+  "primaryBrowserGroups": 51,
+  "targetedStatusRegressions": 5,
+  "analyticComparisonCases": {
+    "passed": 120,
+    "failed": 0
+  },
+  "originalSourceHashesUnchanged": 9,
+  "scope": "Independent software and workflow verification. No customer, wearable calibration or clinical performance claimed."
+}

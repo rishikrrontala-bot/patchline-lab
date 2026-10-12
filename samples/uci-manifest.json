@@ -1,0 +1,16 @@
+{
+  "title": "Room Occupancy Estimation \u2014 S1_Temp first 5,000 records",
+  "creators": "Adarsh Pal Singh and Sachin Chaudhari",
+  "datasetDOI": "https://doi.org/10.24432/C5P605",
+  "source": "https://archive.ics.uci.edu/dataset/864/room+occupancy+estimation",
+  "download": "https://archive.ics.uci.edu/static/public/864/room%2Boccupancy%2Bestimation.zip",
+  "license": "CC BY 4.0",
+  "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+  "rawCSV_SHA256": "c090ee5c94b61762bfec9d22767864490b51030f98cca030f02822468db25d9c",
+  "sampleCSV_SHA256": "e0464e1d21c231d1cd463fb4d017650f55d8b947adae6e1dd6c97d37457a377f",
+  "transformation": "First 5,000 source rows in original order. Date + Time converted to elapsed seconds relative to first row without assuming a timezone. S1_Temp strings preserved verbatim; source Date and Time retained. All other sensor/occupancy fields omitted.",
+  "rows": 5000,
+  "durationSeconds": 157433.0,
+  "maximumGapSeconds": 1532.0,
+  "scope": "Recorded environmental temperature. Import interoperability evidence only; no smart-bandage, patient, calibration or fault ground truth. No source affiliation or endorsement."
+}

@@ -1,0 +1,10 @@
+{
+  "checks": [
+    "Recorded-data success describes the current recording",
+    "Applied protocol success is visible",
+    "Synthetic investigation clears previous recorded-data and protocol provenance statuses",
+    "Current comparison remains valid",
+    "Mobile has no page-level overflow"
+  ],
+  "errors": []
+}

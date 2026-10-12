@@ -1,0 +1,1754 @@
+{
+  "version": "2.0.0",
+  "seed": "0x8a9120f1",
+  "cases": 120,
+  "passed": 120,
+  "byCategory": {
+    "shared-changing-signal": {
+      "cases": 20,
+      "passed": 20
+    },
+    "declared-offset-exceeds": {
+      "cases": 20,
+      "passed": 20
+    },
+    "below-tolerance-change": {
+      "cases": 20,
+      "passed": 20
+    },
+    "uncertain-boundary": {
+      "cases": 20,
+      "passed": 20
+    },
+    "missing-reference": {
+      "cases": 20,
+      "passed": 20
+    },
+    "unstable-reference": {
+      "cases": 20,
+      "passed": 20
+    }
+  },
+  "examples": [
+    {
+      "caseIndex": 0,
+      "category": "shared-changing-signal",
+      "expected": "within-tolerance",
+      "actual": "within-tolerance",
+      "counts": {
+        "within": 80,
+        "exceeds": 0,
+        "uncertain": 0,
+        "unavailable": 0
+      },
+      "coverage": 1,
+      "passed": true
+    },
+    {
+      "caseIndex": 1,
+      "category": "declared-offset-exceeds",
+      "expected": "discrepancy",
+      "actual": "discrepancy",
+      "counts": {
+        "within": 0,
+        "exceeds": 80,
+        "uncertain": 0,
+        "unavailable": 0
+      },
+      "coverage": 1,
+      "passed": true
+    },
+    {
+      "caseIndex": 2,
+      "category": "below-tolerance-change",
+      "expected": "within-tolerance",
+      "actual": "within-tolerance",
+      "counts": {
+        "within": 80,
+        "exceeds": 0,
+        "uncertain": 0,
+        "unavailable": 0
+      },
+      "coverage": 1,
+      "passed": true
+    },
+    {
+      "caseIndex": 3,
+      "category": "uncertain-boundary",
+      "expected": "inconclusive",
+      "actual": "inconclusive",
+      "counts": {
+        "within": 0,
+        "exceeds": 0,
+        "uncertain": 80,
+        "unavailable": 0
+      },
+      "coverage": 1,
+      "passed": true
+    },
+    {
+      "caseIndex": 4,
+      "category": "missing-reference",
+      "expected": "inconclusive",
+      "actual": "inconclusive",
+      "counts": {
+        "within": 0,
+        "exceeds": 0,
+        "uncertain": 0,
+        "unavailable": 80
+      },
+      "coverage": 0,
+      "passed": true
+    },
+    {
+      "caseIndex": 5,
+      "category": "unstable-reference",
+      "expected": "inconclusive",
+      "actual": "inconclusive",
+      "counts": {
+        "within": 0,
+        "exceeds": 0,
+        "uncertain": 0,
+        "unavailable": 80
+      },
+      "coverage": 0,
+      "passed": true
+    },
+    {
+      "caseIndex": 6,
+      "category": "shared-changing-signal",
+      "expected": "within-tolerance",
+      "actual": "within-tolerance",
+      "counts": {
+        "within": 80,
+        "exceeds": 0,
+        "uncertain": 0,
+        "unavailable": 0
+      },
+      "coverage": 1,
+      "passed": true
+    },
+    {
+      "caseIndex": 7,
+      "category": "declared-offset-exceeds",
+      "expected": "discrepancy",
+      "actual": "discrepancy",
+      "counts": {
+        "within": 0,
+        "exceeds": 80,
+        "uncertain": 0,
+        "unavailable": 0
+      },
+      "coverage": 1,
+      "passed": true
+    },
+    {
+      "caseIndex": 8,
+      "category": "below-tolerance-change",
+      "expected": "within-tolerance",
+      "actual": "within-tolerance",
+      "counts": {
+        "within": 80,
+        "exceeds": 0,
+        "uncertain": 0,
+        "unavailable": 0
+      },
+      "coverage": 1,
+      "passed": true
+    },
+    {
+      "caseIndex": 9,
+      "category": "uncertain-boundary",
+      "expected": "inconclusive",
+      "actual": "inconclusive",
+      "counts": {
+        "within": 0,
+        "exceeds": 0,
+        "uncertain": 80,
+        "unavailable": 0
+      },
+      "coverage": 1,
+      "passed": true
+    },
+    {
+      "caseIndex": 10,
+      "category": "missing-reference",
+      "expected": "inconclusive",
+      "actual": "inconclusive",
+      "counts": {
+        "within": 0,
+        "exceeds": 0,
+        "uncertain": 0,
+        "unavailable": 80
+      },
+      "coverage": 0,
+      "passed": true
+    },
+    {
+      "caseIndex": 11,
+      "category": "unstable-reference",
+      "expected": "inconclusive",
+      "actual": "inconclusive",
+      "counts": {
+        "within": 0,
+        "exceeds": 0,
+        "uncertain": 0,
+        "unavailable": 80
+      },
+      "coverage": 0,
+      "passed": true
+    },
+    {
+      "caseIndex": 12,
+      "category": "shared-changing-signal",
+      "expected": "within-tolerance",
+      "actual": "within-tolerance",
+      "counts": {
+        "within": 80,
+        "exceeds": 0,
+        "uncertain": 0,
+        "unavailable": 0
+      },
+      "coverage": 1,
+      "passed": true
+    },
+    {
+      "caseIndex": 13,
+      "category": "declared-offset-exceeds",
+      "expected": "discrepancy",
+      "actual": "discrepancy",
+      "counts": {
+        "within": 0,
+        "exceeds": 80,
+        "uncertain": 0,
+        "unavailable": 0
+      },
+      "coverage": 1,
+      "passed": true
+    },
+    {
+      "caseIndex": 14,
+      "category": "below-tolerance-change",
+      "expected": "within-tolerance",
+      "actual": "within-tolerance",
+      "counts": {
+        "within": 80,
+        "exceeds": 0,
+        "uncertain": 0,
+        "unavailable": 0
+      },
+      "coverage": 1,
+      "passed": true
+    },
+    {
+      "caseIndex": 15,
+      "category": "uncertain-boundary",
+      "expected": "inconclusive",
+      "actual": "inconclusive",
+      "counts": {
+        "within": 0,
+        "exceeds": 0,
+        "uncertain": 80,
+        "unavailable": 0
+      },
+      "coverage": 1,
+      "passed": true
+    },
+    {
+      "caseIndex": 16,
+      "category": "missing-reference",
+      "expected": "inconclusive",
+      "actual": "inconclusive",
+      "counts": {
+        "within": 0,
+        "exceeds": 0,
+        "uncertain": 0,
+        "unavailable": 80
+      },
+      "coverage": 0,
+      "passed": true
+    },
+    {
+      "caseIndex": 17,
+      "category": "unstable-reference",
+      "expected": "inconclusive",
+      "actual": "inconclusive",
+      "counts": {
+        "within": 0,
+        "exceeds": 0,
+        "uncertain": 0,
+        "unavailable": 80
+      },
+      "coverage": 0,
+      "passed": true
+    },
+    {
+      "caseIndex": 18,
+      "category": "shared-changing-signal",
+      "expected": "within-tolerance",
+      "actual": "within-tolerance",
+      "counts": {
+        "within": 80,
+        "exceeds": 0,
+        "uncertain": 0,
+        "unavailable": 0
+      },
+      "coverage": 1,
+      "passed": true
+    },
+    {
+      "caseIndex": 19,
+      "category": "declared-offset-exceeds",
+      "expected": "discrepancy",
+      "actual": "discrepancy",
+      "counts": {
+        "within": 0,
+        "exceeds": 80,
+        "uncertain": 0,
+        "unavailable": 0
+      },
+      "coverage": 1,
+      "passed": true
+    },
+    {
+      "caseIndex": 20,
+      "category": "below-tolerance-change",
+      "expected": "within-tolerance",
+      "actual": "within-tolerance",
+      "counts": {
+        "within": 80,
+        "exceeds": 0,
+        "uncertain": 0,
+        "unavailable": 0
+      },
+      "coverage": 1,
+      "passed": true
+    },
+    {
+      "caseIndex": 21,
+      "category": "uncertain-boundary",
+      "expected": "inconclusive",
+      "actual": "inconclusive",
+      "counts": {
+        "within": 0,
+        "exceeds": 0,
+        "uncertain": 80,
+        "unavailable": 0
+      },
+      "coverage": 1,
+      "passed": true
+    },
+    {
+      "caseIndex": 22,
+      "category": "missing-reference",
+      "expected": "inconclusive",
+      "actual": "inconclusive",
+      "counts": {
+        "within": 0,
+        "exceeds": 0,
+        "uncertain": 0,
+        "unavailable": 80
+      },
+      "coverage": 0,
+      "passed": true
+    },
+    {
+      "caseIndex": 23,
+      "category": "unstable-reference",
+      "expected": "inconclusive",
+      "actual": "inconclusive",
+      "counts": {
+        "within": 0,
+        "exceeds": 0,
+        "uncertain": 0,
+        "unavailable": 80
+      },
+      "coverage": 0,
+      "passed": true
+    },
+    {
+      "caseIndex": 24,
+      "category": "shared-changing-signal",
+      "expected": "within-tolerance",
+      "actual": "within-tolerance",
+      "counts": {
+        "within": 80,
+        "exceeds": 0,
+        "uncertain": 0,
+        "unavailable": 0
+      },
+      "coverage": 1,
+      "passed": true
+    },
+    {
+      "caseIndex": 25,
+      "category": "declared-offset-exceeds",
+      "expected": "discrepancy",
+      "actual": "discrepancy",
+      "counts": {
+        "within": 0,
+        "exceeds": 80,
+        "uncertain": 0,
+        "unavailable": 0
+      },
+      "coverage": 1,
+      "passed": true
+    },
+    {
+      "caseIndex": 26,
+      "category": "below-tolerance-change",
+      "expected": "within-tolerance",
+      "actual": "within-tolerance",
+      "counts": {
+        "within": 80,
+        "exceeds": 0,
+        "uncertain": 0,
+        "unavailable": 0
+      },
+      "coverage": 1,
+      "passed": true
+    },
+    {
+      "caseIndex": 27,
+      "category": "uncertain-boundary",
+      "expected": "inconclusive",
+      "actual": "inconclusive",
+      "counts": {
+        "within": 0,
+        "exceeds": 0,
+        "uncertain": 80,
+        "unavailable": 0
+      },
+      "coverage": 1,
+      "passed": true
+    },
+    {
+      "caseIndex": 28,
+      "category": "missing-reference",
+      "expected": "inconclusive",
+      "actual": "inconclusive",
+      "counts": {
+        "within": 0,
+        "exceeds": 0,
+        "uncertain": 0,
+        "unavailable": 80
+      },
+      "coverage": 0,
+      "passed": true
+    },
+    {
+      "caseIndex": 29,
+      "category": "unstable-reference",
+      "expected": "inconclusive",
+      "actual": "inconclusive",
+      "counts": {
+        "within": 0,
+        "exceeds": 0,
+        "uncertain": 0,
+        "unavailable": 80
+      },
+      "coverage": 0,
+      "passed": true
+    },
+    {
+      "caseIndex": 30,
+      "category": "shared-changing-signal",
+      "expected": "within-tolerance",
+      "actual": "within-tolerance",
+      "counts": {
+        "within": 80,
+        "exceeds": 0,
+        "uncertain": 0,
+        "unavailable": 0
+      },
+      "coverage": 1,
+      "passed": true
+    },
+    {
+      "caseIndex": 31,
+      "category": "declared-offset-exceeds",
+      "expected": "discrepancy",
+      "actual": "discrepancy",
+      "counts": {
+        "within": 0,
+        "exceeds": 80,
+        "uncertain": 0,
+        "unavailable": 0
+      },
+      "coverage": 1,
+      "passed": true
+    },
+    {
+      "caseIndex": 32,
+      "category": "below-tolerance-change",
+      "expected": "within-tolerance",
+      "actual": "within-tolerance",
+      "counts": {
+        "within": 80,
+        "exceeds": 0,
+        "uncertain": 0,
+        "unavailable": 0
+      },
+      "coverage": 1,
+      "passed": true
+    },
+    {
+      "caseIndex": 33,
+      "category": "uncertain-boundary",
+      "expected": "inconclusive",
+      "actual": "inconclusive",
+      "counts": {
+        "within": 0,
+        "exceeds": 0,
+        "uncertain": 80,
+        "unavailable": 0
+      },
+      "coverage": 1,
+      "passed": true
+    },
+    {
+      "caseIndex": 34,
+      "category": "missing-reference",
+      "expected": "inconclusive",
+      "actual": "inconclusive",
+      "counts": {
+        "within": 0,
+        "exceeds": 0,
+        "uncertain": 0,
+        "unavailable": 80
+      },
+      "coverage": 0,
+      "passed": true
+    },
+    {
+      "caseIndex": 35,
+      "category": "unstable-reference",
+      "expected": "inconclusive",
+      "actual": "inconclusive",
+      "counts": {
+        "within": 0,
+        "exceeds": 0,
+        "uncertain": 0,
+        "unavailable": 80
+      },
+      "coverage": 0,
+      "passed": true
+    },
+    {
+      "caseIndex": 36,
+      "category": "shared-changing-signal",
+      "expected": "within-tolerance",
+      "actual": "within-tolerance",
+      "counts": {
+        "within": 80,
+        "exceeds": 0,
+        "uncertain": 0,
+        "unavailable": 0
+      },
+      "coverage": 1,
+      "passed": true
+    },
+    {
+      "caseIndex": 37,
+      "category": "declared-offset-exceeds",
+      "expected": "discrepancy",
+      "actual": "discrepancy",
+      "counts": {
+        "within": 0,
+        "exceeds": 80,
+        "uncertain": 0,
+        "unavailable": 0
+      },
+      "coverage": 1,
+      "passed": true
+    },
+    {
+      "caseIndex": 38,
+      "category": "below-tolerance-change",
+      "expected": "within-tolerance",
+      "actual": "within-tolerance",
+      "counts": {
+        "within": 80,
+        "exceeds": 0,
+        "uncertain": 0,
+        "unavailable": 0
+      },
+      "coverage": 1,
+      "passed": true
+    },
+    {
+      "caseIndex": 39,
+      "category": "uncertain-boundary",
+      "expected": "inconclusive",
+      "actual": "inconclusive",
+      "counts": {
+        "within": 0,
+        "exceeds": 0,
+        "uncertain": 80,
+        "unavailable": 0
+      },
+      "coverage": 1,
+      "passed": true
+    },
+    {
+      "caseIndex": 40,
+      "category": "missing-reference",
+      "expected": "inconclusive",
+      "actual": "inconclusive",
+      "counts": {
+        "within": 0,
+        "exceeds": 0,
+        "uncertain": 0,
+        "unavailable": 80
+      },
+      "coverage": 0,
+      "passed": true
+    },
+    {
+      "caseIndex": 41,
+      "category": "unstable-reference",
+      "expected": "inconclusive",
+      "actual": "inconclusive",
+      "counts": {
+        "within": 0,
+        "exceeds": 0,
+        "uncertain": 0,
+        "unavailable": 80
+      },
+      "coverage": 0,
+      "passed": true
+    },
+    {
+      "caseIndex": 42,
+      "category": "shared-changing-signal",
+      "expected": "within-tolerance",
+      "actual": "within-tolerance",
+      "counts": {
+        "within": 80,
+        "exceeds": 0,
+        "uncertain": 0,
+        "unavailable": 0
+      },
+      "coverage": 1,
+      "passed": true
+    },
+    {
+      "caseIndex": 43,
+      "category": "declared-offset-exceeds",
+      "expected": "discrepancy",
+      "actual": "discrepancy",
+      "counts": {
+        "within": 0,
+        "exceeds": 80,
+        "uncertain": 0,
+        "unavailable": 0
+      },
+      "coverage": 1,
+      "passed": true
+    },
+    {
+      "caseIndex": 44,
+      "category": "below-tolerance-change",
+      "expected": "within-tolerance",
+      "actual": "within-tolerance",
+      "counts": {
+        "within": 80,
+        "exceeds": 0,
+        "uncertain": 0,
+        "unavailable": 0
+      },
+      "coverage": 1,
+      "passed": true
+    },
+    {
+      "caseIndex": 45,
+      "category": "uncertain-boundary",
+      "expected": "inconclusive",
+      "actual": "inconclusive",
+      "counts": {
+        "within": 0,
+        "exceeds": 0,
+        "uncertain": 80,
+        "unavailable": 0
+      },
+      "coverage": 1,
+      "passed": true
+    },
+    {
+      "caseIndex": 46,
+      "category": "missing-reference",
+      "expected": "inconclusive",
+      "actual": "inconclusive",
+      "counts": {
+        "within": 0,
+        "exceeds": 0,
+        "uncertain": 0,
+        "unavailable": 80
+      },
+      "coverage": 0,
+      "passed": true
+    },
+    {
+      "caseIndex": 47,
+      "category": "unstable-reference",
+      "expected": "inconclusive",
+      "actual": "inconclusive",
+      "counts": {
+        "within": 0,
+        "exceeds": 0,
+        "uncertain": 0,
+        "unavailable": 80
+      },
+      "coverage": 0,
+      "passed": true
+    },
+    {
+      "caseIndex": 48,
+      "category": "shared-changing-signal",
+      "expected": "within-tolerance",
+      "actual": "within-tolerance",
+      "counts": {
+        "within": 80,
+        "exceeds": 0,
+        "uncertain": 0,
+        "unavailable": 0
+      },
+      "coverage": 1,
+      "passed": true
+    },
+    {
+      "caseIndex": 49,
+      "category": "declared-offset-exceeds",
+      "expected": "discrepancy",
+      "actual": "discrepancy",
+      "counts": {
+        "within": 0,
+        "exceeds": 80,
+        "uncertain": 0,
+        "unavailable": 0
+      },
+      "coverage": 1,
+      "passed": true
+    },
+    {
+      "caseIndex": 50,
+      "category": "below-tolerance-change",
+      "expected": "within-tolerance",
+      "actual": "within-tolerance",
+      "counts": {
+        "within": 80,
+        "exceeds": 0,
+        "uncertain": 0,
+        "unavailable": 0
+      },
+      "coverage": 1,
+      "passed": true
+    },
+    {
+      "caseIndex": 51,
+      "category": "uncertain-boundary",
+      "expected": "inconclusive",
+      "actual": "inconclusive",
+      "counts": {
+        "within": 0,
+        "exceeds": 0,
+        "uncertain": 80,
+        "unavailable": 0
+      },
+      "coverage": 1,
+      "passed": true
+    },
+    {
+      "caseIndex": 52,
+      "category": "missing-reference",
+      "expected": "inconclusive",
+      "actual": "inconclusive",
+      "counts": {
+        "within": 0,
+        "exceeds": 0,
+        "uncertain": 0,
+        "unavailable": 80
+      },
+      "coverage": 0,
+      "passed": true
+    },
+    {
+      "caseIndex": 53,
+      "category": "unstable-reference",
+      "expected": "inconclusive",
+      "actual": "inconclusive",
+      "counts": {
+        "within": 0,
+        "exceeds": 0,
+        "uncertain": 0,
+        "unavailable": 80
+      },
+      "coverage": 0,
+      "passed": true
+    },
+    {
+      "caseIndex": 54,
+      "category": "shared-changing-signal",
+      "expected": "within-tolerance",
+      "actual": "within-tolerance",
+      "counts": {
+        "within": 80,
+        "exceeds": 0,
+        "uncertain": 0,
+        "unavailable": 0
+      },
+      "coverage": 1,
+      "passed": true
+    },
+    {
+      "caseIndex": 55,
+      "category": "declared-offset-exceeds",
+      "expected": "discrepancy",
+      "actual": "discrepancy",
+      "counts": {
+        "within": 0,
+        "exceeds": 80,
+        "uncertain": 0,
+        "unavailable": 0
+      },
+      "coverage": 1,
+      "passed": true
+    },
+    {
+      "caseIndex": 56,
+      "category": "below-tolerance-change",
+      "expected": "within-tolerance",
+      "actual": "within-tolerance",
+      "counts": {
+        "within": 80,
+        "exceeds": 0,
+        "uncertain": 0,
+        "unavailable": 0
+      },
+      "coverage": 1,
+      "passed": true
+    },
+    {
+      "caseIndex": 57,
+      "category": "uncertain-boundary",
+      "expected": "inconclusive",
+      "actual": "inconclusive",
+      "counts": {
+        "within": 0,
+        "exceeds": 0,
+        "uncertain": 80,
+        "unavailable": 0
+      },
+      "coverage": 1,
+      "passed": true
+    },
+    {
+      "caseIndex": 58,
+      "category": "missing-reference",
+      "expected": "inconclusive",
+      "actual": "inconclusive",
+      "counts": {
+        "within": 0,
+        "exceeds": 0,
+        "uncertain": 0,
+        "unavailable": 80
+      },
+      "coverage": 0,
+      "passed": true
+    },
+    {
+      "caseIndex": 59,
+      "category": "unstable-reference",
+      "expected": "inconclusive",
+      "actual": "inconclusive",
+      "counts": {
+        "within": 0,
+        "exceeds": 0,
+        "uncertain": 0,
+        "unavailable": 80
+      },
+      "coverage": 0,
+      "passed": true
+    },
+    {
+      "caseIndex": 60,
+      "category": "shared-changing-signal",
+      "expected": "within-tolerance",
+      "actual": "within-tolerance",
+      "counts": {
+        "within": 80,
+        "exceeds": 0,
+        "uncertain": 0,
+        "unavailable": 0
+      },
+      "coverage": 1,
+      "passed": true
+    },
+    {
+      "caseIndex": 61,
+      "category": "declared-offset-exceeds",
+      "expected": "discrepancy",
+      "actual": "discrepancy",
+      "counts": {
+        "within": 0,
+        "exceeds": 80,
+        "uncertain": 0,
+        "unavailable": 0
+      },
+      "coverage": 1,
+      "passed": true
+    },
+    {
+      "caseIndex": 62,
+      "category": "below-tolerance-change",
+      "expected": "within-tolerance",
+      "actual": "within-tolerance",
+      "counts": {
+        "within": 80,
+        "exceeds": 0,
+        "uncertain": 0,
+        "unavailable": 0
+      },
+      "coverage": 1,
+      "passed": true
+    },
+    {
+      "caseIndex": 63,
+      "category": "uncertain-boundary",
+      "expected": "inconclusive",
+      "actual": "inconclusive",
+      "counts": {
+        "within": 0,
+        "exceeds": 0,
+        "uncertain": 80,
+        "unavailable": 0
+      },
+      "coverage": 1,
+      "passed": true
+    },
+    {
+      "caseIndex": 64,
+      "category": "missing-reference",
+      "expected": "inconclusive",
+      "actual": "inconclusive",
+      "counts": {
+        "within": 0,
+        "exceeds": 0,
+        "uncertain": 0,
+        "unavailable": 80
+      },
+      "coverage": 0,
+      "passed": true
+    },
+    {
+      "caseIndex": 65,
+      "category": "unstable-reference",
+      "expected": "inconclusive",
+      "actual": "inconclusive",
+      "counts": {
+        "within": 0,
+        "exceeds": 0,
+        "uncertain": 0,
+        "unavailable": 80
+      },
+      "coverage": 0,
+      "passed": true
+    },
+    {
+      "caseIndex": 66,
+      "category": "shared-changing-signal",
+      "expected": "within-tolerance",
+      "actual": "within-tolerance",
+      "counts": {
+        "within": 80,
+        "exceeds": 0,
+        "uncertain": 0,
+        "unavailable": 0
+      },
+      "coverage": 1,
+      "passed": true
+    },
+    {
+      "caseIndex": 67,
+      "category": "declared-offset-exceeds",
+      "expected": "discrepancy",
+      "actual": "discrepancy",
+      "counts": {
+        "within": 0,
+        "exceeds": 80,
+        "uncertain": 0,
+        "unavailable": 0
+      },
+      "coverage": 1,
+      "passed": true
+    },
+    {
+      "caseIndex": 68,
+      "category": "below-tolerance-change",
+      "expected": "within-tolerance",
+      "actual": "within-tolerance",
+      "counts": {
+        "within": 80,
+        "exceeds": 0,
+        "uncertain": 0,
+        "unavailable": 0
+      },
+      "coverage": 1,
+      "passed": true
+    },
+    {
+      "caseIndex": 69,
+      "category": "uncertain-boundary",
+      "expected": "inconclusive",
+      "actual": "inconclusive",
+      "counts": {
+        "within": 0,
+        "exceeds": 0,
+        "uncertain": 80,
+        "unavailable": 0
+      },
+      "coverage": 1,
+      "passed": true
+    },
+    {
+      "caseIndex": 70,
+      "category": "missing-reference",
+      "expected": "inconclusive",
+      "actual": "inconclusive",
+      "counts": {
+        "within": 0,
+        "exceeds": 0,
+        "uncertain": 0,
+        "unavailable": 80
+      },
+      "coverage": 0,
+      "passed": true
+    },
+    {
+      "caseIndex": 71,
+      "category": "unstable-reference",
+      "expected": "inconclusive",
+      "actual": "inconclusive",
+      "counts": {
+        "within": 0,
+        "exceeds": 0,
+        "uncertain": 0,
+        "unavailable": 80
+      },
+      "coverage": 0,
+      "passed": true
+    },
+    {
+      "caseIndex": 72,
+      "category": "shared-changing-signal",
+      "expected": "within-tolerance",
+      "actual": "within-tolerance",
+      "counts": {
+        "within": 80,
+        "exceeds": 0,
+        "uncertain": 0,
+        "unavailable": 0
+      },
+      "coverage": 1,
+      "passed": true
+    },
+    {
+      "caseIndex": 73,
+      "category": "declared-offset-exceeds",
+      "expected": "discrepancy",
+      "actual": "discrepancy",
+      "counts": {
+        "within": 0,
+        "exceeds": 80,
+        "uncertain": 0,
+        "unavailable": 0
+      },
+      "coverage": 1,
+      "passed": true
+    },
+    {
+      "caseIndex": 74,
+      "category": "below-tolerance-change",
+      "expected": "within-tolerance",
+      "actual": "within-tolerance",
+      "counts": {
+        "within": 80,
+        "exceeds": 0,
+        "uncertain": 0,
+        "unavailable": 0
+      },
+      "coverage": 1,
+      "passed": true
+    },
+    {
+      "caseIndex": 75,
+      "category": "uncertain-boundary",
+      "expected": "inconclusive",
+      "actual": "inconclusive",
+      "counts": {
+        "within": 0,
+        "exceeds": 0,
+        "uncertain": 80,
+        "unavailable": 0
+      },
+      "coverage": 1,
+      "passed": true
+    },
+    {
+      "caseIndex": 76,
+      "category": "missing-reference",
+      "expected": "inconclusive",
+      "actual": "inconclusive",
+      "counts": {
+        "within": 0,
+        "exceeds": 0,
+        "uncertain": 0,
+        "unavailable": 80
+      },
+      "coverage": 0,
+      "passed": true
+    },
+    {
+      "caseIndex": 77,
+      "category": "unstable-reference",
+      "expected": "inconclusive",
+      "actual": "inconclusive",
+      "counts": {
+        "within": 0,
+        "exceeds": 0,
+        "uncertain": 0,
+        "unavailable": 80
+      },
+      "coverage": 0,
+      "passed": true
+    },
+    {
+      "caseIndex": 78,
+      "category": "shared-changing-signal",
+      "expected": "within-tolerance",
+      "actual": "within-tolerance",
+      "counts": {
+        "within": 80,
+        "exceeds": 0,
+        "uncertain": 0,
+        "unavailable": 0
+      },
+      "coverage": 1,
+      "passed": true
+    },
+    {
+      "caseIndex": 79,
+      "category": "declared-offset-exceeds",
+      "expected": "discrepancy",
+      "actual": "discrepancy",
+      "counts": {
+        "within": 0,
+        "exceeds": 80,
+        "uncertain": 0,
+        "unavailable": 0
+      },
+      "coverage": 1,
+      "passed": true
+    },
+    {
+      "caseIndex": 80,
+      "category": "below-tolerance-change",
+      "expected": "within-tolerance",
+      "actual": "within-tolerance",
+      "counts": {
+        "within": 80,
+        "exceeds": 0,
+        "uncertain": 0,
+        "unavailable": 0
+      },
+      "coverage": 1,
+      "passed": true
+    },
+    {
+      "caseIndex": 81,
+      "category": "uncertain-boundary",
+      "expected": "inconclusive",
+      "actual": "inconclusive",
+      "counts": {
+        "within": 0,
+        "exceeds": 0,
+        "uncertain": 80,
+        "unavailable": 0
+      },
+      "coverage": 1,
+      "passed": true
+    },
+    {
+      "caseIndex": 82,
+      "category": "missing-reference",
+      "expected": "inconclusive",
+      "actual": "inconclusive",
+      "counts": {
+        "within": 0,
+        "exceeds": 0,
+        "uncertain": 0,
+        "unavailable": 80
+      },
+      "coverage": 0,
+      "passed": true
+    },
+    {
+      "caseIndex": 83,
+      "category": "unstable-reference",
+      "expected": "inconclusive",
+      "actual": "inconclusive",
+      "counts": {
+        "within": 0,
+        "exceeds": 0,
+        "uncertain": 0,
+        "unavailable": 80
+      },
+      "coverage": 0,
+      "passed": true
+    },
+    {
+      "caseIndex": 84,
+      "category": "shared-changing-signal",
+      "expected": "within-tolerance",
+      "actual": "within-tolerance",
+      "counts": {
+        "within": 80,
+        "exceeds": 0,
+        "uncertain": 0,
+        "unavailable": 0
+      },
+      "coverage": 1,
+      "passed": true
+    },
+    {
+      "caseIndex": 85,
+      "category": "declared-offset-exceeds",
+      "expected": "discrepancy",
+      "actual": "discrepancy",
+      "counts": {
+        "within": 0,
+        "exceeds": 80,
+        "uncertain": 0,
+        "unavailable": 0
+      },
+      "coverage": 1,
+      "passed": true
+    },
+    {
+      "caseIndex": 86,
+      "category": "below-tolerance-change",
+      "expected": "within-tolerance",
+      "actual": "within-tolerance",
+      "counts": {
+        "within": 80,
+        "exceeds": 0,
+        "uncertain": 0,
+        "unavailable": 0
+      },
+      "coverage": 1,
+      "passed": true
+    },
+    {
+      "caseIndex": 87,
+      "category": "uncertain-boundary",
+      "expected": "inconclusive",
+      "actual": "inconclusive",
+      "counts": {
+        "within": 0,
+        "exceeds": 0,
+        "uncertain": 80,
+        "unavailable": 0
+      },
+      "coverage": 1,
+      "passed": true
+    },
+    {
+      "caseIndex": 88,
+      "category": "missing-reference",
+      "expected": "inconclusive",
+      "actual": "inconclusive",
+      "counts": {
+        "within": 0,
+        "exceeds": 0,
+        "uncertain": 0,
+        "unavailable": 80
+      },
+      "coverage": 0,
+      "passed": true
+    },
+    {
+      "caseIndex": 89,
+      "category": "unstable-reference",
+      "expected": "inconclusive",
+      "actual": "inconclusive",
+      "counts": {
+        "within": 0,
+        "exceeds": 0,
+        "uncertain": 0,
+        "unavailable": 80
+      },
+      "coverage": 0,
+      "passed": true
+    },
+    {
+      "caseIndex": 90,
+      "category": "shared-changing-signal",
+      "expected": "within-tolerance",
+      "actual": "within-tolerance",
+      "counts": {
+        "within": 80,
+        "exceeds": 0,
+        "uncertain": 0,
+        "unavailable": 0
+      },
+      "coverage": 1,
+      "passed": true
+    },
+    {
+      "caseIndex": 91,
+      "category": "declared-offset-exceeds",
+      "expected": "discrepancy",
+      "actual": "discrepancy",
+      "counts": {
+        "within": 0,
+        "exceeds": 80,
+        "uncertain": 0,
+        "unavailable": 0
+      },
+      "coverage": 1,
+      "passed": true
+    },
+    {
+      "caseIndex": 92,
+      "category": "below-tolerance-change",
+      "expected": "within-tolerance",
+      "actual": "within-tolerance",
+      "counts": {
+        "within": 80,
+        "exceeds": 0,
+        "uncertain": 0,
+        "unavailable": 0
+      },
+      "coverage": 1,
+      "passed": true
+    },
+    {
+      "caseIndex": 93,
+      "category": "uncertain-boundary",
+      "expected": "inconclusive",
+      "actual": "inconclusive",
+      "counts": {
+        "within": 0,
+        "exceeds": 0,
+        "uncertain": 80,
+        "unavailable": 0
+      },
+      "coverage": 1,
+      "passed": true
+    },
+    {
+      "caseIndex": 94,
+      "category": "missing-reference",
+      "expected": "inconclusive",
+      "actual": "inconclusive",
+      "counts": {
+        "within": 0,
+        "exceeds": 0,
+        "uncertain": 0,
+        "unavailable": 80
+      },
+      "coverage": 0,
+      "passed": true
+    },
+    {
+      "caseIndex": 95,
+      "category": "unstable-reference",
+      "expected": "inconclusive",
+      "actual": "inconclusive",
+      "counts": {
+        "within": 0,
+        "exceeds": 0,
+        "uncertain": 0,
+        "unavailable": 80
+      },
+      "coverage": 0,
+      "passed": true
+    },
+    {
+      "caseIndex": 96,
+      "category": "shared-changing-signal",
+      "expected": "within-tolerance",
+      "actual": "within-tolerance",
+      "counts": {
+        "within": 80,
+        "exceeds": 0,
+        "uncertain": 0,
+        "unavailable": 0
+      },
+      "coverage": 1,
+      "passed": true
+    },
+    {
+      "caseIndex": 97,
+      "category": "declared-offset-exceeds",
+      "expected": "discrepancy",
+      "actual": "discrepancy",
+      "counts": {
+        "within": 0,
+        "exceeds": 80,
+        "uncertain": 0,
+        "unavailable": 0
+      },
+      "coverage": 1,
+      "passed": true
+    },
+    {
+      "caseIndex": 98,
+      "category": "below-tolerance-change",
+      "expected": "within-tolerance",
+      "actual": "within-tolerance",
+      "counts": {
+        "within": 80,
+        "exceeds": 0,
+        "uncertain": 0,
+        "unavailable": 0
+      },
+      "coverage": 1,
+      "passed": true
+    },
+    {
+      "caseIndex": 99,
+      "category": "uncertain-boundary",
+      "expected": "inconclusive",
+      "actual": "inconclusive",
+      "counts": {
+        "within": 0,
+        "exceeds": 0,
+        "uncertain": 80,
+        "unavailable": 0
+      },
+      "coverage": 1,
+      "passed": true
+    },
+    {
+      "caseIndex": 100,
+      "category": "missing-reference",
+      "expected": "inconclusive",
+      "actual": "inconclusive",
+      "counts": {
+        "within": 0,
+        "exceeds": 0,
+        "uncertain": 0,
+        "unavailable": 80
+      },
+      "coverage": 0,
+      "passed": true
+    },
+    {
+      "caseIndex": 101,
+      "category": "unstable-reference",
+      "expected": "inconclusive",
+      "actual": "inconclusive",
+      "counts": {
+        "within": 0,
+        "exceeds": 0,
+        "uncertain": 0,
+        "unavailable": 80
+      },
+      "coverage": 0,
+      "passed": true
+    },
+    {
+      "caseIndex": 102,
+      "category": "shared-changing-signal",
+      "expected": "within-tolerance",
+      "actual": "within-tolerance",
+      "counts": {
+        "within": 80,
+        "exceeds": 0,
+        "uncertain": 0,
+        "unavailable": 0
+      },
+      "coverage": 1,
+      "passed": true
+    },
+    {
+      "caseIndex": 103,
+      "category": "declared-offset-exceeds",
+      "expected": "discrepancy",
+      "actual": "discrepancy",
+      "counts": {
+        "within": 0,
+        "exceeds": 80,
+        "uncertain": 0,
+        "unavailable": 0
+      },
+      "coverage": 1,
+      "passed": true
+    },
+    {
+      "caseIndex": 104,
+      "category": "below-tolerance-change",
+      "expected": "within-tolerance",
+      "actual": "within-tolerance",
+      "counts": {
+        "within": 80,
+        "exceeds": 0,
+        "uncertain": 0,
+        "unavailable": 0
+      },
+      "coverage": 1,
+      "passed": true
+    },
+    {
+      "caseIndex": 105,
+      "category": "uncertain-boundary",
+      "expected": "inconclusive",
+      "actual": "inconclusive",
+      "counts": {
+        "within": 0,
+        "exceeds": 0,
+        "uncertain": 80,
+        "unavailable": 0
+      },
+      "coverage": 1,
+      "passed": true
+    },
+    {
+      "caseIndex": 106,
+      "category": "missing-reference",
+      "expected": "inconclusive",
+      "actual": "inconclusive",
+      "counts": {
+        "within": 0,
+        "exceeds": 0,
+        "uncertain": 0,
+        "unavailable": 80
+      },
+      "coverage": 0,
+      "passed": true
+    },
+    {
+      "caseIndex": 107,
+      "category": "unstable-reference",
+      "expected": "inconclusive",
+      "actual": "inconclusive",
+      "counts": {
+        "within": 0,
+        "exceeds": 0,
+        "uncertain": 0,
+        "unavailable": 80
+      },
+      "coverage": 0,
+      "passed": true
+    },
+    {
+      "caseIndex": 108,
+      "category": "shared-changing-signal",
+      "expected": "within-tolerance",
+      "actual": "within-tolerance",
+      "counts": {
+        "within": 80,
+        "exceeds": 0,
+        "uncertain": 0,
+        "unavailable": 0
+      },
+      "coverage": 1,
+      "passed": true
+    },
+    {
+      "caseIndex": 109,
+      "category": "declared-offset-exceeds",
+      "expected": "discrepancy",
+      "actual": "discrepancy",
+      "counts": {
+        "within": 0,
+        "exceeds": 80,
+        "uncertain": 0,
+        "unavailable": 0
+      },
+      "coverage": 1,
+      "passed": true
+    },
+    {
+      "caseIndex": 110,
+      "category": "below-tolerance-change",
+      "expected": "within-tolerance",
+      "actual": "within-tolerance",
+      "counts": {
+        "within": 80,
+        "exceeds": 0,
+        "uncertain": 0,
+        "unavailable": 0
+      },
+      "coverage": 1,
+      "passed": true
+    },
+    {
+      "caseIndex": 111,
+      "category": "uncertain-boundary",
+      "expected": "inconclusive",
+      "actual": "inconclusive",
+      "counts": {
+        "within": 0,
+        "exceeds": 0,
+        "uncertain": 80,
+        "unavailable": 0
+      },
+      "coverage": 1,
+      "passed": true
+    },
+    {
+      "caseIndex": 112,
+      "category": "missing-reference",
+      "expected": "inconclusive",
+      "actual": "inconclusive",
+      "counts": {
+        "within": 0,
+        "exceeds": 0,
+        "uncertain": 0,
+        "unavailable": 80
+      },
+      "coverage": 0,
+      "passed": true
+    },
+    {
+      "caseIndex": 113,
+      "category": "unstable-reference",
+      "expected": "inconclusive",
+      "actual": "inconclusive",
+      "counts": {
+        "within": 0,
+        "exceeds": 0,
+        "uncertain": 0,
+        "unavailable": 80
+      },
+      "coverage": 0,
+      "passed": true
+    },
+    {
+      "caseIndex": 114,
+      "category": "shared-changing-signal",
+      "expected": "within-tolerance",
+      "actual": "within-tolerance",
+      "counts": {
+        "within": 80,
+        "exceeds": 0,
+        "uncertain": 0,
+        "unavailable": 0
+      },
+      "coverage": 1,
+      "passed": true
+    },
+    {
+      "caseIndex": 115,
+      "category": "declared-offset-exceeds",
+      "expected": "discrepancy",
+      "actual": "discrepancy",
+      "counts": {
+        "within": 0,
+        "exceeds": 80,
+        "uncertain": 0,
+        "unavailable": 0
+      },
+      "coverage": 1,
+      "passed": true
+    },
+    {
+      "caseIndex": 116,
+      "category": "below-tolerance-change",
+      "expected": "within-tolerance",
+      "actual": "within-tolerance",
+      "counts": {
+        "within": 80,
+        "exceeds": 0,
+        "uncertain": 0,
+        "unavailable": 0
+      },
+      "coverage": 1,
+      "passed": true
+    },
+    {
+      "caseIndex": 117,
+      "category": "uncertain-boundary",
+      "expected": "inconclusive",
+      "actual": "inconclusive",
+      "counts": {
+        "within": 0,
+        "exceeds": 0,
+        "uncertain": 80,
+        "unavailable": 0
+      },
+      "coverage": 1,
+      "passed": true
+    },
+    {
+      "caseIndex": 118,
+      "category": "missing-reference",
+      "expected": "inconclusive",
+      "actual": "inconclusive",
+      "counts": {
+        "within": 0,
+        "exceeds": 0,
+        "uncertain": 0,
+        "unavailable": 80
+      },
+      "coverage": 0,
+      "passed": true
+    },
+    {
+      "caseIndex": 119,
+      "category": "unstable-reference",
+      "expected": "inconclusive",
+      "actual": "inconclusive",
+      "counts": {
+        "within": 0,
+        "exceeds": 0,
+        "uncertain": 0,
+        "unavailable": 80
+      },
+      "coverage": 0,
+      "passed": true
+    }
+  ],
+  "external": {
+    "rows": 5000,
+    "qualityFindings": 76,
+    "qualityCodes": [
+      "time-gap"
+    ],
+    "comparisonDecision": "discrepancy",
+    "comparisonCounts": {
+      "within": 3625,
+      "exceeds": 1125,
+      "uncertain": 250,
+      "unavailable": 0
+    },
+    "coverage": 1
+  },
+  "performance": {
+    "runtime": "Node v22.23.2 darwin/arm64",
+    "repetitions": 15,
+    "work": "Parse 5,000 recorded temperature rows, inspect, inject labelled drift copy, compare with original control",
+    "medianMs": 7.4631669999999986,
+    "p95Ms": 22.484041000000005,
+    "durationsMs": [
+      21.980000000000004,
+      20.813041000000005,
+      22.484041000000005,
+      10.003958999999995,
+      13.145916000000014,
+      10.868124999999992,
+      7.3542500000000075,
+      7.227499999999992,
+      7.076458000000002,
+      7.4631669999999986,
+      7.325040999999999,
+      7.64224999999999,
+      6.996208999999993,
+      7.255416999999994,
+      7.110165999999992
+    ]
+  },
+  "scope": "Engineering cases independently constructed from analytic signals, using fixed declared options. They test expected comparison decisions, not real sensor-fault accuracy. The UCI sample validates recorded environmental temperature interoperability; injected modifications are simulated and the original is not calibrated ground truth."
+}

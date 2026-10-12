@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'none'; object-src 'none'; base-uri 'self'">
+<meta name="author" content="Rishik Rontala">
+<title>Patchline Lab — Research Sensor Recording Validation</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="lab.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to instrument</a>
+<header class="site">
+  <div class="brand">Patchline Lab</div>
+  <nav class="primary" aria-label="Sections">
+    <a href="#hero">Overview</a>
+    <a href="#workflow">Workflow</a>
+    <a href="#benchmark">Benchmark</a>
+    <a href="#business">Business</a>
+    <a href="#buyer-value">Your value</a>
+  </nav>
+</header>
+<main id="main">
+  <section id="hero" class="hero">
+    <div class="hero-text">
+      <p class="eyebrow">Research instrument · Browser only · No diagnosis</p>
+      <h1>Trust the recording.<br>Trace the evidence.</h1>
+      <p class="lede">A measurement workbench for smart-bandage research teams. Import the sensors you actually recorded. Compare an experiment with a reference or repeat run, investigate exact samples, and take the complete evidence with you.</p>
+      <p class="scope">Map → inspect → compare → explain → reproduce. Your recording stays in this browser tab.</p><div class="row hero-actions"><button id="btnInvestigation" type="button">Try a discrepancy investigation ↗</button><button id="btnRecorded" type="button">Load recorded temperature</button></div><p class="help">First option: labelled synthetic control. Second: credited UCI environmental recording.</p>
+    </div>
+    <div class="hero-plot" aria-hidden="true">
+      <svg id="heroSvg" viewBox="0 0 600 320" role="img" aria-label="Preview trace"></svg>
+    </div>
+  </section>
+
+  <section id="workflow" class="workflow">
+    <h2>Workflow</h2>
+    <ol class="steps">
+      <li>
+        <h3>01 · Load recording</h3>
+        <p>Upload a CSV, confirm its columns and units, and select the sensors present. One channel is enough. Your files stay in this tab.</p>
+        <div class="row">
+          <button id="btnStable" type="button" aria-pressed="true">Stable trace</button>
+          <button id="btnChange" type="button" aria-pressed="false">Changing trace</button>
+        </div>
+        <div class="row">
+          <label class="file">
+            <span>Upload CSV (max 1 MiB, 5000 rows)</span>
+            <input id="fileInput" type="file" accept=".csv,text/csv" aria-describedby="fileHelp">
+          </label>
+          <button id="btnTemplate" type="button">Download template</button>
+        </div>
+        <p id="fileHelp" class="help">CSV: comma delimiter, dot decimals, numeric elapsed timestamps. Column names can vary. Blank readings remain missing; unselected sensors are absent. Imports are limited to 1 MiB and 5,000 rows.</p>
+        <div id="mappingPanel" class="mapping-panel" hidden aria-labelledby="mappingTitle">
+          <h4 id="mappingTitle" tabindex="-1">Confirm the import</h4>
+          <p id="mappingSummary" class="help"></p>
+          <div class="row"><label>Import as<select id="importTarget"><option value="recording">Current recording</option><option value="reference">Reference / repeat recording</option></select></label><label>Profile name<input id="profileName" type="text" maxlength="96" value="Research CSV"></label><label>Timestamp column<select id="mapTime"></select></label><label>Time unit<select id="mapTimeUnit"><option value="s">Seconds</option><option value="ms">Milliseconds</option></select></label></div>
+          <div id="channelMappings" class="mapping-grid"></div>
+          <p class="help">Suggestions need your confirmation. Units describe the source file; conversions are explicit. Raw voltage needs a separate calibration and cannot be mapped directly to temperature or pH.</p>
+          <div class="row"><button id="btnConfirmImport" type="button">Confirm and load</button><button id="btnCancelImport" type="button">Cancel import</button></div>
+          <p id="mappingError" class="error" role="alert" hidden></p>
+        </div>
+        <p id="source" class="source" aria-live="polite"></p>
+        <p id="fileError" class="error" role="alert" hidden></p>
+      </li>
+      <li>
+        <h3>02 · Experiment and evidence</h3>
+        <p>Replay a fault to test detection. Whole-recording quality control is separate from the cursor preview.</p>
+    <details id="comparisonPanel" class="comparison-panel" open>
+      <summary>Compare with a reference or repeat run</summary>
+      <p class="help">A changing signal alone is not evidence of drift. Declare your reference and tolerance. Patchline compares actual aligned readings without extrapolation.</p>
+      <div class="row"><label>Comparison file<input id="referenceFile" type="file" accept=".csv,text/csv" aria-describedby="comparisonHelp"></label><button id="btnUseOriginal" type="button">Use original as control</button><button id="btnClearReference" type="button">Clear comparison</button></div>
+      <p id="referenceSource" class="source">No comparison recording loaded.</p>
+      <div id="comparisonControls" class="row"></div>
+      <p id="comparisonHelp" class="help">Offset: current time minus comparison time, in seconds. Match distance limits timestamp mismatch. Reference step limits flag abrupt reference changes for review. Neither establishes calibration accuracy.</p>
+      <div class="row"><button id="btnCompare" type="button">Compare recordings</button><button id="btnExportComparison" type="button" disabled>Export comparison</button></div>
+      <p id="comparisonError" class="error" role="alert" hidden></p>
+      <div id="comparisonOut" class="comparison-out" aria-live="polite"></div>
+    </details>
+    <details class="fault">
+      <summary>Controlled fault experiment</summary>
+      <div class="row">
+        <label>Type
+          <select id="faultType">
+            <option value="none">none</option>
+            <option value="dropout">dropout</option>
+            <option value="spike">spike</option>
+            <option value="gap">gap</option>
+            <option value="drift">drift</option>
+          </select>
+        </label>
+        <label>Channel
+          <select id="faultChannel">
+            <option value="temperature">temperature</option>
+            <option value="moisture">moisture</option>
+            <option value="ph">ph</option>
+            <option value="glucose">glucose</option>
+          </select>
+        </label>
+        <label>Index (1-based) <input id="faultIndex" type="number" value="12" min="1"></label>
+        <label>Severity <input id="faultSeverity" type="number" value="0" step="0.1"></label>
+        <label>Seed <input id="faultSeed" type="number" value="1" min="0"></label>
+      </div>
+      <div class="row">
+        <button id="btnApply" type="button">Apply experiment</button>
+        <button id="btnReset" type="button">Reset</button>
+      </div>
+      <p id="opLog" class="oplog" aria-live="polite"></p>
+    </details>
+
+        <div id="charts" class="charts"></div>
+        <div class="cursor-row">
+          <label for="cursor">Cursor sample</label>
+          <input id="cursor" type="range" min="0" max="0" value="0" step="1" aria-describedby="cursorHelp">
+          <span id="cursorHelp" class="help"></span>
+        </div>
+        <div class="row">
+          <button id="btnPlay" type="button">Play</button>
+          <button id="btnPause" type="button" disabled>Pause</button>
+        </div>
+        <div class="table-wrap">
+        <table class="sample-table" aria-label="Current sample">
+          <thead><tr><th>Index</th><th>Time (s)</th><th>Temperature (°C)</th><th>Wetness (%)</th><th>pH</th><th>Glucose (AU)</th></tr></thead>
+          <tbody><tr id="sampleRow"><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr></tbody>
+        </table>
+        </div>
+        <h4>Measurement findings</h4>
+        <ul id="findings" class="findings"></ul>
+        <p id="modelStatus" class="model" aria-live="polite"></p>
+      </li>
+      <li id="benchmark">
+        <h3>03 · Synthetic benchmark</h3>
+        <p>Standalone benchmark over generated traces. Not an evaluation of any uploaded recording against ground truth.</p>
+        <div class="row">
+          <label>Seed <input id="bmSeed" type="number" value="42" min="0" max="1000000"></label>
+          <label>Cases <input id="bmCases" type="number" value="100" min="10" max="300"></label>
+          <button id="btnBenchmark" type="button">Run benchmark</button>
+        </div>
+        <div id="benchmarkOut" class="benchmark"></div>
+      </li>
+      <li>
+        <h3>04 · Export report</h3>
+        <p>Export the actual report object or print a human-readable summary.</p>
+        <div class="row">
+          <button id="btnExport" type="button">Export JSON</button>
+          <button id="btnPrint" type="button">Print report</button><button id="btnExportWorkspace" type="button">Save complete workspace</button><label>Restore workspace<input id="workspaceFile" type="file" accept=".json,application/json"></label>
+        </div>
+      </li>
+    </ol><p id="workspaceStatus" class="help" role="status"></p><p id="workspaceError" class="error" role="alert" hidden></p>
+
+
+    <details class="protocol" open>
+      <summary>Protocol disclosure</summary>
+      <div id="protocolInfo"></div>
+      <details class="protocol-editor"><summary>Edit and reuse the measurement protocol</summary>
+        <div class="row"><label>Protocol name<input id="protocolName" type="text" maxlength="96"></label><label>Revision<input id="protocolRevision" type="text" maxlength="32"></label><label>Maximum sampling gap (s)<input id="protocolGap" type="number" min="0.001" step="any"></label><label class="check-label"><input id="protocolFlatline" type="checkbox"> Flag repeated values (optional)</label></div>
+        <div id="protocolRows" class="table-wrap"></div>
+        <div class="row"><button id="btnSaveProtocol" type="button">Apply protocol</button><button id="btnExportProtocol" type="button">Export protocol + import profile</button><label>Restore protocol<input id="protocolFile" type="file" accept=".json,application/json"></label></div>
+        <p id="protocolError" class="error" role="alert" hidden></p><p id="protocolStatus" class="help" role="status"></p>
+      </details>
+    </details>
+  </section>
+
+  <section id="business" class="business">
+    <h2>Business planning (illustrative)</h2>
+    <p>Initial buyer: research sensor teams. Proposed path: paid pilot, then a maintained research workflow. Prices and buyer demand remain unvalidated.</p>
+    <div class="row scenario-buttons"><button id="bizDownside" type="button">Downside</button><button id="bizBase" type="button" aria-pressed="true">Base assumptions</button><button id="bizUpside" type="button">Upside</button><button id="btnExportEconomics" type="button">Export assumptions + calculations</button></div>
+    <div id="economicsInputs" class="finance-grid"></div>
+    <div id="bizOut" class="bizout" aria-live="polite"></div>
+    <p id="financeError" class="error" role="alert" hidden></p>
+    <div class="offer"><h3>A bounded first sale</h3><p><strong>Proposed $300 / two-week pilot:</strong> one reviewed CSV import profile, one explicit measurement protocol, two experiment recordings and a repeatable evidence report. Acceptance: agreed files import, exact findings can be traced, and the workspace reproduces the report.</p><p><strong>Proposed $99 / month:</strong> maintained import profiles, protocol updates and recurring experiment review. The browser tools work today; service demand and willingness to pay are unvalidated.</p><p class="help">Initial user: wearable-sensor researcher. Buyer hypothesis: principal investigator or lab manager. No interviews, customers or commitments are represented here.</p></div>
+    <p class="links"><a href="submission/PILOT-OFFER.md">Pilot scope and acceptance</a> · <a href="submission/CUSTOMER-VALIDATION-KIT.md">User and buyer validation kit</a> · <a href="submission/business-validation.md">Business assumptions</a> · <a href="submission/market-evidence.md">Market evidence</a></p>
+  </section>
+  <section id="buyer-value" class="buyer-value" aria-labelledby="buyerTitle">
+    <p class="eyebrow">Your reporting task · Local worksheet</p>
+    <h2 id="buyerTitle">Does the workflow earn its price?</h2>
+    <p id="buyerHelp">Compare the same correctly completed report in your current workflow and Patchline. Include import, mapping, corrections and export. This worksheet stays separate from the founder's planning scenarios above.</p>
+    <p class="help">Enter estimates or your own measured task times. Self-reported measurements remain unverified. No error, clinical-outcome or collaboration value is monetized.</p>
+    <form id="buyerForm" novalidate>
+      <div class="buyer-grid">
+        <label for="buyer-runsPerMonth">Comparable reports per month<input id="buyer-runsPerMonth" name="runsPerMonth" type="number" min="0" max="1000000" step="1" required aria-describedby="buyerError"></label>
+        <label for="buyer-baselineMinutes">Current workflow minutes / report<input id="buyer-baselineMinutes" name="baselineMinutes" type="number" min="0" max="1000000" step="any" required aria-describedby="buyerError"></label>
+        <label for="buyer-toolMinutes">Patchline minutes / report<input id="buyer-toolMinutes" name="toolMinutes" type="number" min="0" max="1000000" step="any" required aria-describedby="buyerError"></label>
+        <label for="buyer-hourlyRate">Research labor value ($ / hour)<input id="buyer-hourlyRate" name="hourlyRate" type="number" min="0" max="1000000" step="any" required aria-describedby="buyerError"></label>
+        <label for="buyer-monthlyPrice">Monthly service price ($, proposed)<input id="buyer-monthlyPrice" name="monthlyPrice" type="number" value="99" min="0" max="1000000" step="any" required aria-describedby="buyerError"></label>
+        <label for="buyer-pilotPrice">Pilot fee ($, proposed)<input id="buyer-pilotPrice" name="pilotPrice" type="number" value="300" min="0" max="1000000" step="any" required aria-describedby="buyerError"></label>
+        <label for="buyer-setupMinutes">Your additional setup minutes<input id="buyer-setupMinutes" name="setupMinutes" type="number" min="0" max="1000000" step="any" required aria-describedby="buyerSetupHelp buyerError"></label>
+        <label for="buyer-setupCost">Other setup cash costs ($)<input id="buyer-setupCost" name="setupCost" type="number" min="0" max="1000000" step="any" required aria-describedby="buyerSetupHelp buyerError"></label>
+        <label for="buyer-evidenceType">Source of your inputs<select id="buyer-evidenceType" name="evidenceType" aria-describedby="buyerEvidenceHelp"><option value="estimate">Estimates — hypothetical</option><option value="user-measured">My task measurements — unverified</option></select></label>
+      </div>
+      <p id="buyerSetupHelp" class="help">Setup means your additional time and cash outside the pilot deliverables. The calculation counts the full pilot fee; exclude costs already included in that fee. Use one currency consistently; this worksheet displays dollars.</p>
+      <label class="buyer-check" for="buyer-sameTask"><input id="buyer-sameTask" name="sameTask" type="checkbox" required aria-describedby="buyerTaskHelp buyerError"> Both methods complete the same report correctly under comparable conditions.</label>
+      <p id="buyerTaskHelp" class="help">Use comparable files, agreed findings, equal training and complete outputs. Incomplete or incorrect tasks cannot establish time savings. For estimates, this checkbox declares that assumption.</p>
+      <label class="buyer-note" for="buyer-note">Task / measurement note (required for measured inputs)<textarea id="buyer-note" name="note" rows="3" maxlength="512" aria-describedby="buyerEvidenceHelp buyerError" placeholder="Task, files, tools, dates, completion, assistance and what the timing includes. No private or patient data."></textarea></label>
+      <p id="buyerEvidenceHelp" class="help">Measured inputs need a note; choosing that label does not verify an observation. Record actual results and permissions in the validation kit before making a public claim.</p>
+      <div class="row buyer-actions"><button id="buyerCalculate" type="submit">Calculate your estimate</button><button id="buyerExport" type="button" disabled>Export worksheet JSON</button><button id="buyerReset" type="button">Reset your inputs</button><button id="buyerExample" type="button">Load hypothetical example</button></div>
+      <p id="buyerError" class="error" role="alert" hidden></p>
+    </form>
+    <div id="buyerOut" class="buyer-out" aria-live="polite" aria-atomic="true" tabindex="-1"><p>Enter your task, frequency, labor and setup inputs to calculate. Proposed fees are editable; no buyer results are prefilled.</p></div>
+    <p class="links"><a href="#workflow">Use the free workbench</a> · <a href="submission/CUSTOMER-VALIDATION-KIT.md">Record a fair task comparison</a> · <a href="submission/PILOT-OFFER.md">Review the proposed pilot scope</a></p>
+  </section>
+<section class="data-credit"><h2>Independent recorded-data proof</h2><p>The bundled sample preserves S1_Temp from the first 5,000 records of Singh and Chaudhari’s <a href="https://doi.org/10.24432/C5P605">Room Occupancy Estimation dataset</a>, UCI, CC BY 4.0. Only timestamps were converted to elapsed seconds; temperature values and original dates/times are retained. This demonstrates environmental recording interoperability.</p><p><a href="samples/uci-temperature-5000.csv" download>Download the sample CSV</a> · <a href="samples/uci-manifest.json">Transformations, source and checksums</a> · <a href="submission/technical-walkthrough.html">Architecture walkthrough</a></p><p class="help">Environmental temperature is not smart-bandage validation. The recording contains sampling gaps, which remain visible under the declared protocol. No source endorsement or calibration ground truth is implied.</p></section>
+<section id="printReport" aria-label="Experiment report"></section>
+</main>
+<footer class="site">
+  <p>Patchline Lab · Built by Rishik Rontala · research instrument, no clinical claims</p>
+</footer>
+<script type="module" src="lab-app.js"></script>
+<script type="module" src="workbench.js"></script>
+<script type="module" src="buyer-value-ui.js"></script>
+</body>
+</html>
